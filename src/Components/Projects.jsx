@@ -10,12 +10,12 @@ function ProjectCard({ title, imageUrl, link, animation,isVisible }) {
   return (
     <div
     className={`mt-4 card  mb-3 ${animation} ${isVisible ? 'visible' : 'hidden'} rounded rounded-4 customShadow`}
-    style={{ maxWidth: '25rem', maxHeight: '25rem'}}
+    style={{ width: '25rem', height: '20rem'}}
     >
       <div className="card-header text-center text-success fs-5 fw-medium">{title}</div>
       <div className="card-body">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="card-img " loading='lazy' src={imageUrl} alt={title} />
+          <img className="card-img "  src={imageUrl} alt={title} style={{ width: '23rem', height: '15rem'}}/>
         </a>
       </div>
     </div>
@@ -27,7 +27,7 @@ function Projects() {
   return (
     <div className="container p-5">
       <h2 className="text-info">Projects</h2>
-      <div className="d-flex flex-wrap justify-content-around"  ref={ref}>
+      <div className="d-flex flex-wrap justify-content-around " style={{gap:"3rem"}} ref={ref}>
         <ProjectCard
           title="Network Anomaly Detection"
           imageUrl={Image1}
