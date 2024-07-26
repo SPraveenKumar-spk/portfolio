@@ -12,16 +12,16 @@ function Footer(){
       </div>
       <ul className="contact">
         <li>
-          <a href=""><FaGithub /></a>
+          <a href="https://github.com/SPraveenKumar-spk" target="_blank"><FaGithub /></a>
         </li>
         <li>
-          <a href=""><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/s-praveenkumar/" target="_blank"><FaLinkedin /></a>
         </li>
         <li>
-          <a href=""><MdAttachEmail /></a>
+          <a href="mailto:99210042006@klu.ac.in" target="_blank"><MdAttachEmail /></a>
         </li>
         <li>
-          <a href=""><FaTwitter /></a>
+          <a href="https://x.com/im_praveen_s" target="_blank"><FaTwitter /></a>
         </li>
       </ul>
       <p className="text-light">&copy;2024 S.Praveen Kumar | All rights reserved.</p>

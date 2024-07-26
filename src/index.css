@@ -10,6 +10,7 @@
 .navbar-custom {
   background-color: transparent;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -20,7 +21,7 @@
   white-space: nowrap;
   overflow: hidden;
   animation:
-          typing 2s steps(22, end) ,
+          typing 4s steps(22, end) infinite,
 
           cursor .5s step-end infinite alternate;
 }
@@ -163,3 +164,79 @@ footer .wave#wave4 {
     text-align: center;
   }
 }
+
+.card {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.hidden {
+  transform: translateY(20px);
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translate(-100%,-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translate(100%,100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translate(-100%,-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translate(100%,100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slideInFromTop {
+  animation: slideInFromTop 2s ease-out forwards;
+}
+
+.slideInFromBottom {
+  animation: slideInFromBottom 2s ease-out forwards;
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.slideInFromRight {
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
