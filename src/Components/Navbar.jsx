@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container-fluid">
-        <a className="navbar-brand ms-5 fs-4 text-light" href="#">Hello!</a>
+        <a className="navbar-brand ms-5 fs-3 fw-medium " style={{color:"#20c997"}} href="#">Hello!</a>
         <button className="navbar-toggler text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
           <span className="navbar-toggler-icon" ></span>
         </button>

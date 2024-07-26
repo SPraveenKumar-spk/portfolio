@@ -9,8 +9,8 @@ function ProjectCard({ title, imageUrl, link, animation,isVisible }) {
   
   return (
     <div
-    className={`mt-4 card mb-3 ${animation} ${isVisible ? 'visible' : 'hidden'}`}
-    style={{ maxWidth: '25rem', maxHeight: '25rem' }}
+    className={`mt-4 card  mb-3 ${animation} ${isVisible ? 'visible' : 'hidden'} rounded rounded-4 customShadow`}
+    style={{ maxWidth: '25rem', maxHeight: '25rem'}}
     >
       <div className="card-header text-center text-success fs-5 fw-medium">{title}</div>
       <div className="card-body">

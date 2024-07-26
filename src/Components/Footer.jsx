@@ -10,6 +10,7 @@ function Footer(){
         <div className="wave" id="wave3"></div>
         <div className="wave" id="wave4"></div>
       </div>
+      <h3 className="text-light">Contact Me</h3>
       <ul className="contact">
         <li>
           <a href="https://github.com/SPraveenKumar-spk" target="_blank"><FaGithub /></a>
@@ -24,7 +25,7 @@ function Footer(){
           <a href="https://x.com/im_praveen_s" target="_blank"><FaTwitter /></a>
         </li>
       </ul>
-      <p className="text-light">&copy;2024 S.Praveen Kumar | All rights reserved.</p>
+      <p className="mt-2 text-light">&copy;2024 S.Praveen Kumar | All rights reserved.</p>
     </footer>
     </>
   )
