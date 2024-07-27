@@ -1,5 +1,5 @@
 {
-  "homepage": "https://SPraveenKumar-spk.github.io/Portfolio",
+  "homepage": "https://SPraveenKumar-spk.github.io/portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
