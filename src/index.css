@@ -57,13 +57,13 @@ nav a:hover span {
 
 
 
-/* @media (min-width: 769px) { 
+@media (min-width: 769px) { 
   .navbar-collapse {
     position: static;
     transform: none;
     display: flex !important;
   }
-} */
+}
 ::-webkit-scrollbar {
   display: none;
 }
