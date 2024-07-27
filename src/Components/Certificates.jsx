@@ -33,9 +33,9 @@ function Certificates() {
   ];
 
   return (
-    <div className="container">
+    <div className="container pb-5 ">
       <h2 className="text-info">Certifications</h2>
-      <div id="carouselExampleIndicators" className="carousel slide mt-5" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" className="carousel slide mt-5 " data-bs-ride="carousel">
         <div className="carousel-indicators">
           {images.map((_, index) => (
             <button
@@ -52,7 +52,7 @@ function Certificates() {
         <div className="carousel-inner ">
           {images.map((image, index) => (
             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-              <img src={image.src} className="d-block mx-auto  rounded-5" alt={image.alt} style={{ height: '400px', width: '80%' }} />
+              <img src={image.src} className="d-block mx-auto  rounded-5" alt={image.alt} style={{ maxHeight: '400px', maxWidth: '80%' }} />
             </div>
           ))}
         </div>

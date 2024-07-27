@@ -1,5 +1,5 @@
 
-function Navbar() {
+function Navbar({onContactClick}) {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container-fluid">
@@ -16,7 +16,7 @@ function Navbar() {
               <a className="nav-link active text-light fs-5" href="#">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active text-light fs-5" href="#">Contact</a>
+              <a className="nav-link active text-light fs-5"  onClick={onContactClick} style={{cursor:"pointer"}}>Contact</a>
             </li>
           </ul>
         </div>
