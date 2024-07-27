@@ -1,5 +1,5 @@
 {
-  "homepage": "https://SPraveenKumar-spk.github.io/portfolio",
+  "homepage": "https://SPraveenKumar-spk/github.io/portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -19,7 +19,7 @@
     "react-intersection-observer": "^9.13.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.3", 
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8.57.0",
