@@ -29,7 +29,7 @@ function Projects() {
   return (
     <div className="container p-5">
       <h2 className="text-info">Projects</h2>
-      <div className="d-flex flex-wrap justify-content-between"  ref={ref}>
+      <div className="d-flex flex-wrap justify-content-around"  ref={ref}>
         <ProjectCard
           title="Network Anomaly Detection"
           imageUrl={Image1}

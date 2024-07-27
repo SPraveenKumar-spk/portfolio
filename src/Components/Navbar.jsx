@@ -10,14 +10,15 @@ function Navbar({onContactClick}) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active text-light fs-5" aria-current="page" href="#">Home</a>
+              <a className="nav-link active  fs-5" aria-current="page" href="#">Home<span></span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active text-light fs-5" href="#">About</a>
+              <a className="nav-link active  fs-5" href="#">About<span></span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active text-light fs-5"  onClick={onContactClick} style={{cursor:"pointer"}}>Contact</a>
+              <a className="nav-link active  fs-5"  onClick={onContactClick} style={{cursor:"pointer"}}>Contact<span></span></a>
             </li>
+         
           </ul>
         </div>
       </div>
