@@ -3,6 +3,7 @@ import Image2 from '../assets/Algorithmist.jpeg';
 import Image3 from '../assets/Ibm.jpeg';
 import Image4 from '../assets/vintra.png';
 import Image5 from '../assets/Hyd.jpeg';
+import Image6 from "../assets/oracle.png"
 function Certificates() {
   const images = [
     {
@@ -12,6 +13,10 @@ function Certificates() {
     {
       src: Image2,
       alt: 'Second slide',
+    },
+    {
+      src : Image6,
+      title : "sixth slide"
     },
     {
       src: Image3,
