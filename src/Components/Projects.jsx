@@ -1,17 +1,22 @@
 import { useInView } from 'react-intersection-observer';
-import Image1 from '../assets/Anomaly.jpg';
-import AgriSmart from '../assets/agrismart.png';
-import ClassSync from '../assets/ClassSync.png';
-import Amazon from '../assets/Amazon_clone.png';
-import Speech from '../assets/Speech.jpg';
+import TodoWebsite from "../assets/TodoWebsite.png";
+import Image1 from "../assets/Anomaly.jpg";
+import AgriSmart from "../assets/agrismart.png";
+import ClassSync from "../assets/ClassSync.png";
+import Amazon from "../assets/Amazon_clone.png";
+import Speech from "../assets/Speech.jpg";
 
 function ProjectCard({ title, imageUrl, link, animation, isVisible }) {
   return (
     <div
-      className={`mt-4 card  mb-3 rounded rounded-4 customShadow ${isVisible ? `${animation} visible` : 'invisible'}`}
-      style={{maxHeight : "25rem",maxWidth : "25rem"}}
+      className={`mt-4 card  mb-3 rounded rounded-4 customShadow ${
+        isVisible ? `${animation} visible` : "invisible"
+      }`}
+      style={{ maxHeight: "25rem", maxWidth: "25rem" }}
     >
-      <div className="card-header text-center text-success fs-5 fw-medium">{title}</div>
+      <div className="card-header text-center text-success fs-5 fw-medium">
+        {title}
+      </div>
       <div className="card-body">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="card-img" src={imageUrl} alt={title} />
@@ -29,7 +34,7 @@ function Projects() {
   return (
     <div className="container p-5">
       <h2 className="text-info">Projects</h2>
-      <div className="d-flex flex-wrap justify-content-around"  ref={ref}>
+      <div className="d-flex flex-wrap justify-content-around" ref={ref}>
         <ProjectCard
           title="Network Anomaly Detection"
           imageUrl={Image1}
@@ -60,8 +65,8 @@ function Projects() {
         />
         <ProjectCard
           title="To Do"
-          imageUrl="https://media.istockphoto.com/id/528917900/photo/top-view-of-smart-phone-coffee-pen-and-notepad.jpg?s=612x612&w=0&k=20&c=1HjiOR44dg1BIIi0ah_5d7rryGPajoUzCaiUvx4jUZY="
-          link="https://github.com/SPraveenKumar-spk/todo"
+          imageUrl={TodoWebsite}
+          link="https://todo-app-sand-six-17.vercel.app/"
           animation="slideInFromTop"
           isVisible={inView}
         />
