@@ -1,18 +1,18 @@
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import TodoWebsite from "../assets/TodoWebsite.png";
 import Image1 from "../assets/Anomaly.jpg";
 import AgriSmart from "../assets/agrismart.png";
 import ClassSync from "../assets/ClassSync.png";
 import Amazon from "../assets/Amazon_clone.png";
-import Speech from "../assets/Speech.jpg";
+import Transcribe from "../assets/Transcribe.png";
 
 function ProjectCard({ title, imageUrl, link, animation, isVisible }) {
   return (
     <div
-      className={`mt-4 card  mb-3 rounded rounded-4 customShadow ${
+      className={`mt-4 card mb-3 rounded rounded-4 customShadow ${
         isVisible ? `${animation} visible` : "invisible"
       }`}
-      style={{ maxHeight: "25rem", maxWidth: "25rem" }}
+      style={{ height: "30rem", Width: "25rem" }}
     >
       <div className="card-header text-center text-success fs-5 fw-medium">
         {title}
@@ -34,49 +34,61 @@ function Projects() {
   return (
     <div className="container p-5">
       <h2 className="text-info">Projects</h2>
-      <div className="d-flex flex-wrap justify-content-around" ref={ref}>
-        <ProjectCard
-          title="Network Anomaly Detection"
-          imageUrl={Image1}
-          link="https://github.com/SPraveenKumar-spk/Network_Anomaly_Detection"
-          animation="slideInFromTop"
-          isVisible={inView}
-        />
-        <ProjectCard
-          title="ClassSync"
-          imageUrl={ClassSync}
-          link="https://github.com/SPraveenKumar-spk/ClassSync"
-          animation="slideInFromBottom"
-          isVisible={inView}
-        />
-        <ProjectCard
-          title="AgriSmart"
-          imageUrl={AgriSmart}
-          link="https://github.com/SPraveenKumar-spk/AgriSmart"
-          animation="slideInFromLeft"
-          isVisible={inView}
-        />
-        <ProjectCard
-          title="Speech-Text-Speech"
-          imageUrl={Speech}
-          link="https://github.com/SPraveenKumar-spk/Speech-Text-Speech"
-          animation="slideInFromRight"
-          isVisible={inView}
-        />
-        <ProjectCard
-          title="To Do"
-          imageUrl={TodoWebsite}
-          link="https://todo-app-sand-six-17.vercel.app/"
-          animation="slideInFromTop"
-          isVisible={inView}
-        />
-        <ProjectCard
-          title="Amazon Clone"
-          imageUrl={Amazon}
-          link="https://github.com/SPraveenKumar-spk/Amazon_Clone"
-          animation="slideInFromBottom"
-          isVisible={inView}
-        />
+      <div className="row" ref={ref}>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="ClassSync"
+            imageUrl={ClassSync}
+            link="https://classsync-learn.vercel.app"
+            animation="slideInFromBottom"
+            isVisible={inView}
+          />
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="AgriSmart"
+            imageUrl={AgriSmart}
+            link="https://agrismart-ai.vercel.app"
+            animation="slideInFromLeft"
+            isVisible={inView}
+          />
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="Network Anomaly Detection"
+            imageUrl={Image1}
+            link="https://github.com/SPraveenKumar-spk/Network_Anomaly_Detection"
+            animation="slideInFromTop"
+            isVisible={inView}
+          />
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="Transcribe"
+            imageUrl={Transcribe}
+            link="https://transcribeai.vercel.app"
+            animation="slideInFromRight"
+            isVisible={inView}
+          />
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="To Do"
+            imageUrl={TodoWebsite}
+            link="https://todo-app-sand-six-17.vercel.app/"
+            animation="slideInFromTop"
+            isVisible={inView}
+          />
+        </div>
+        <div className="col-md-6 d-flex justify-content-center">
+          <ProjectCard
+            title="Amazon Clone"
+            imageUrl={Amazon}
+            link="https://github.com/SPraveenKumar-spk/Amazon_Clone"
+            animation="slideInFromBottom"
+            isVisible={inView}
+          />
+        </div>
       </div>
     </div>
   );
