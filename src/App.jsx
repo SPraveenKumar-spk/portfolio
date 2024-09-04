@@ -5,25 +5,26 @@ import Programming from "./Components/Programming";
 import Projects from "./Components/Projects";
 import Certificates from "./Components/Certificates";
 import Footer from "./Components/Footer"; 
-function App(){
-
+import ConfettiEffect from "./Components/ConfettiEffect";
+function App() {
   const footref = useRef(null);
 
-  const contactClick = ()=>{
-    if(footref.current){
-      footref.current.scrollIntoView({behaviour:"smooth"})
+  const contactClick = () => {
+    if (footref.current) {
+      footref.current.scrollIntoView({ behaviour: "smooth" });
     }
-  }
+  };
 
-  return(
-  <>
-  <Navbar onContactClick= {contactClick }/>
-  <Hero/>
-  <Programming />
-  <Projects />
-  <Certificates />
-  <Footer ref = {footref}/>
-  </>
+  return (
+    <>
+      <ConfettiEffect />
+      <Navbar onContactClick={contactClick} />
+      <Hero />
+      <Programming />
+      <Projects />
+      <Certificates />
+      <Footer ref={footref} />
+    </>
   );
 }
 

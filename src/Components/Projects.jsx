@@ -35,7 +35,10 @@ function Projects() {
     <div className="container p-5">
       <h2 className="text-info">Projects</h2>
       <div className="row" ref={ref}>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="ClassSync"
             imageUrl={ClassSync}
@@ -44,7 +47,10 @@ function Projects() {
             isVisible={inView}
           />
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="AgriSmart"
             imageUrl={AgriSmart}
@@ -53,7 +59,10 @@ function Projects() {
             isVisible={inView}
           />
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="Network Anomaly Detection"
             imageUrl={Image1}
@@ -62,7 +71,10 @@ function Projects() {
             isVisible={inView}
           />
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="Transcribe"
             imageUrl={Transcribe}
@@ -71,7 +83,10 @@ function Projects() {
             isVisible={inView}
           />
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="To Do"
             imageUrl={TodoWebsite}
@@ -80,7 +95,10 @@ function Projects() {
             isVisible={inView}
           />
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div
+          className="col-md-6 d-flex justify-content-center"
+          title="Click to Visit"
+        >
           <ProjectCard
             title="Amazon Clone"
             imageUrl={Amazon}
